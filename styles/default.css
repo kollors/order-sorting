@@ -1,0 +1,17 @@
+form[data-float="center"] {
+  text-align: center;
+}
+fieldset {
+  vertical-align: top;
+}
+label > input[type="checkbox"],
+label > input[type="radio"] {
+  height: auto;
+}
+nav.main.inverse {
+  background: #333;
+  color: #fefefe;
+}
+body {
+  font-family: Arial;
+}

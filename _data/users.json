@@ -1,0 +1,66 @@
+[
+  {
+    "id": "36",
+    "name": "Василий Пупкин",
+    "role": "Менеджер",
+    "path": "c:/games/vp36",
+    "grants": [
+      {
+        "title": "Добавлять формулы",
+        "checked": false
+      },
+      {
+        "title": "Удалять формулы",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "999",
+    "name": "Пупкин Пупкин",
+    "role": "Кладовщик",
+    "path": "",
+    "grants": [
+      {
+        "title": "Простотреть заказ",
+        "checked": true
+      },
+      {
+        "title": "Изменить статус заказа",
+        "checked": false
+      }
+    ]
+  },
+  {
+    "id": "666",
+    "name": "Пупок Пупкин from hell",
+    "role": "Менеджер",
+    "path": "c:/games/pupok666",
+    "grants": [
+      {
+        "title": "Добавлять формулы",
+        "checked": false
+      },
+      {
+        "title": "Удалять формулы",
+        "checked": true
+      }
+    ]
+  },
+  {
+    "id": "123",
+    "name": "Василий Васильев",
+    "role": "Менеджер",
+    "path": "c:/games/vv123",
+    "grants": [
+      {
+        "title": "Добавлять формулы",
+        "checked": false
+      },
+      {
+        "title": "Удалять формулы",
+        "checked": true
+      }
+    ]
+  }
+]
