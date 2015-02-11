@@ -98,6 +98,11 @@ function adminController(scope, storage) {
     scope.setSetting = function () {
         console.log(scope.setting);
     };
+
+    scope.userNew = {};
+    scope.createUser = function () {
+        console.log(scope.userNew);
+    };
 }
 
 

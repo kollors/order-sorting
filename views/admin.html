@@ -53,27 +53,27 @@
         <form name="newUser" novalidate data-float="center">
             <fieldset class="vertical">
                 <label>Логин
-                    <input type="text" ng-model="username" placeholder="Логин" required>
+                    <input type="text" ng-model="userNew.username" placeholder="Логин" required>
                 </label>
                 <label>Пароль
-                    <input type="password" ng-model="password" placeholder="Пароль" required>
+                    <input type="password" ng-model="userNew.password" placeholder="Пароль" required>
                 </label>
                 <label>Email
-                    <input type="email" ng-model="email" placeholder="Email" required>
+                    <input type="email" ng-model="userNew.email" placeholder="Email" required>
                 </label>
             </fieldset>
             <fieldset class="vertical">
                 <label>Имя
-                    <input type="text" ng-model="firstName" placeholder="Имя" required>
+                    <input type="text" ng-model="userNew.firstName" placeholder="Имя" required>
                 </label>
                 <label>Фамилия
-                    <input type="text" ng-model="lastName" placeholder="Фамилия" required>
+                    <input type="text" ng-model="userNew.lastName" placeholder="Фамилия" required>
                 </label>
             </fieldset>
         </form>
     </section>
     <footer>
         <button close-modal="new-user">Закрыть</button>
-        <button class="success close" ng-disabled="newUser.$invalid">Создать</button>
+        <button class="success close" ng-disabled="newUser.$invalid" ng-click="createUser()">Создать</button>
     </footer>
 </section>

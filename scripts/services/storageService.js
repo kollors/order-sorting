@@ -25,4 +25,8 @@ function $storage(http) {
     this.setSetting = function (setting) {
         console.log(setting);
     };
+
+    this.createUser = function (user) {
+        console.log(user);
+    };
 }
