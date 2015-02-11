@@ -7,5 +7,9 @@ function configuration(routeProvider) {
             templateUrl: 'views/admin.html',
             controller:  'adminController'
         })
+        .when('/manager', {
+            templateUrl: 'views/manager.html',
+            controller:  'managerController'
+        })
         .otherwise({templateUrl: 'views/index.html'});
 }

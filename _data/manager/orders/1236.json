@@ -1,0 +1,54 @@
+{
+  "warehouse": [
+    {
+      "code": "909090",
+      "title": "СЕРЬЕЗНО1",
+      "quantity": "10 щук",
+      "comment": "А я туда ходил и там стена",
+      "ready": false,
+      "deffered": false
+    },
+    {
+      "code": "9090901",
+      "title": "СЕРЬЕЗНО2",
+      "quantity": "100 щук",
+      "comment": "А я туда ходил и там стена",
+      "ready": true,
+      "deffered": false
+    },
+    {
+      "code": "9090902",
+      "title": "СЕРЬЕЗНО133333",
+      "quantity": "10 щук",
+      "comment": "А я туда ходил и там стена",
+      "ready": true,
+      "deffered": false
+    }
+  ],
+  "laboratory": [
+    {
+      "code": "909090",
+      "title": "GOLF",
+      "quantity": "-1 щук",
+      "comment": "А я туда ходил и там стена",
+      "ready": false,
+      "deffered": false
+    },
+    {
+      "code": "9090901",
+      "title": "АЛЬФА КИРПИЧ",
+      "quantity": "10 щук",
+      "comment": "А я туда ходил и там стена",
+      "ready": true,
+      "deffered": false
+    },
+    {
+      "code": "9090902",
+      "title": "КОШКА",
+      "quantity": "10 щук",
+      "comment": "А я туда ходил и там стена",
+      "ready": true,
+      "deffered": false
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "customer": "Пупкин В.А.",
+    "time": "13:13",
+    "date": "27.01.2015",
+    "number": 1234,
+    "status": 25,
+    "priority": 1,
+    "deffered": false
+  },
+  {
+    "customer": "Путин В.В.",
+    "time": "13:13",
+    "date": "27.01.2015",
+    "number": 1236,
+    "status": 75,
+    "priority": 100,
+    "deffered": true
+  },
+  {
+    "customer": "Медведь Александр",
+    "time": "13:13",
+    "date": "27.01.2015",
+    "number": 1237,
+    "status": 75,
+    "priority": 3,
+    "deffered": false
+  }
+]

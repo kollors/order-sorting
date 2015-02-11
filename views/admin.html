@@ -2,7 +2,7 @@
     <section class="column">
         <nav class="main inverse">
             <ul>
-                <li>Администратор</li>
+                <li class="nohover">Администратор</li>
             </ul>
             <ul data-float="right">
                 <li open-modal="new-user" style="cursor: pointer">Новый пользователь</li>
@@ -61,6 +61,12 @@
                 <label>Email
                     <input type="email" ng-model="userNew.email" placeholder="Email" required>
                 </label>
+                <select ng-model="userNew.role" name="role">
+                    <option value="" disabled>Должность</option>
+                    <option value="manager">Менеджер</option>
+                    <option value="warehouse">Кладовщик</option>
+                    <option value="laboratory">Колеровщик</option>
+                </select>
             </fieldset>
             <fieldset class="vertical">
                 <label>Имя
@@ -69,11 +75,14 @@
                 <label>Фамилия
                     <input type="text" ng-model="userNew.lastName" placeholder="Фамилия" required>
                 </label>
+                <label>Домашняя папка
+                    <input type="text" ng-model="userNew.path" placeholder="Домашняя папка" required>
+                </label>
             </fieldset>
         </form>
     </section>
     <footer>
         <button close-modal="new-user">Закрыть</button>
-        <button class="success close" ng-disabled="newUser.$invalid" ng-click="createUser()">Создать</button>
+        <button close-modal="new-user" class="success close" ng-disabled="newUser.$invalid" ng-click="createUser()">Создать</button>
     </footer>
 </section>

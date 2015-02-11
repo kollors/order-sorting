@@ -4228,7 +4228,7 @@ function $AnchorScrollProvider() {
    * Use this method to disable automatic scrolling.
    *
    * If automatic scrolling is disabled, one must explicitly call
-   * {@link ng.$anchorScroll $anchorScroll()} in order to scroll to the element related to the
+   * {@link ng.$anchorScroll $anchorScroll()} in orders to scroll to the element related to the
    * current hash.
    */
   this.disableAutoScrolling = function() {
@@ -4271,7 +4271,7 @@ function $AnchorScrollProvider() {
    *
    * <br />
    * <div class="alert alert-warning">
-   * In order for `yOffset` to work properly, scrolling should take place on the document's root and
+   * In orders for `yOffset` to work properly, scrolling should take place on the document's root and
    * not some child element.
    * </div>
    *
@@ -4417,7 +4417,7 @@ function $AnchorScrollProvider() {
         var offset = getYOffset();
 
         if (offset) {
-          // `offset` is the number of pixels we should scroll UP in order to align `elem` properly.
+          // `offset` is the number of pixels we should scroll UP in orders to align `elem` properly.
           // This is true ONLY if the call to `elem.scrollIntoView()` initially aligns `elem` at the
           // top of the viewport.
           //
@@ -4483,7 +4483,7 @@ var $animateMinErr = minErr('$animate');
  * synchronously performs DOM
  * updates and calls done() callbacks.
  *
- * In order to enable animations the ngAnimate module has to be loaded.
+ * In orders to enable animations the ngAnimate module has to be loaded.
  *
  * To see the functional implementation check out src/ngAnimate/animate.js
  */
@@ -4606,7 +4606,7 @@ var $AnimateProvider = ['$provide', function($provide) {
     }
 
     function asyncPromise() {
-      // only serve one instance of a promise in order to save CPU cycles
+      // only serve one instance of a promise in orders to save CPU cycles
       if (!currentDefer) {
         currentDefer = $$q.defer();
         $$asyncCallback(function() {
@@ -5836,16 +5836,16 @@ function $TemplateCacheProvider() {
  *
  * #### `priority`
  * When there are multiple directives defined on a single DOM element, sometimes it
- * is necessary to specify the order in which the directives are applied. The `priority` is used
+ * is necessary to specify the orders in which the directives are applied. The `priority` is used
  * to sort the directives before their `compile` functions get called. Priority is defined as a
  * number. Directives with greater numerical `priority` are compiled first. Pre-link functions
- * are also run in priority order, but post-link functions are run in reverse order. The order
+ * are also run in priority orders, but post-link functions are run in reverse orders. The orders
  * of directives with the same priority is undefined. The default priority is `0`.
  *
  * #### `terminal`
  * If set to true then the current `priority` will be the last set of directives
  * which will execute (any directives at the current priority will still execute
- * as the order of execution on same `priority` is undefined). Note that expressions
+ * as the orders of execution on same `priority` is undefined). Note that expressions
  * and other directives used in the directive's template will also be excluded from execution.
  *
  * #### `scope`
@@ -5879,7 +5879,7 @@ function $TemplateCacheProvider() {
  *   value of `parentModel` on the parent scope. Any changes to `parentModel` will be reflected
  *   in `localModel` and any changes in `localModel` will reflect in `parentModel`. If the parent
  *   scope property doesn't exist, it will throw a NON_ASSIGNABLE_MODEL_EXPRESSION exception. You
- *   can avoid this behavior using `=?` or `=?attr` in order to flag the property as optional. If
+ *   can avoid this behavior using `=?` or `=?attr` in orders to flag the property as optional. If
  *   you want to shallow watch for changes (i.e. $watchCollection instead of $watch) you can use
  *   `=*` or `=*attr` (`=*?` or `=*?attr` if the property is optional).
  *
@@ -5925,7 +5925,7 @@ function $TemplateCacheProvider() {
  * #### `require`
  * Require another directive and inject its controller as the fourth argument to the linking function. The
  * `require` takes a string name (or array of strings) of the directive(s) to pass in. If an array is used, the
- * injected argument will be an array in corresponding order. If no such directive can be
+ * injected argument will be an array in corresponding orders. If no such directive can be
  * found, or if the directive does not have a controller, then an error is raised. The name can be prefixed with:
  *
  * * (no prefix) - Locate the required controller on the current element. Throw an error if not found.
@@ -7256,7 +7256,7 @@ function $CompileProvider($provide, $$sanitizeUriProvider) {
      * of the directives if the terminal directive has been reached.
      *
      * @param {Array} directives Array of collected directives to execute their compile function.
-     *        this needs to be pre-sorted by priority order.
+     *        this needs to be pre-sorted by priority orders.
      * @param {Node} compileNode The raw DOM node to apply the compile functions to
      * @param {Object} templateAttrs The shared attribute function
      * @param {function(angular.Scope, cloneAttachFn=)} transcludeFn A linking function, where the
@@ -8757,8 +8757,8 @@ function $HttpProvider() {
    * Array containing service factories for all synchronous or asynchronous {@link ng.$http $http}
    * pre-processing of request or postprocessing of responses.
    *
-   * These service factories are ordered by request, i.e. they are applied in the same order as the
-   * array, on request, but reverse order, on response.
+   * These service factories are ordered by request, i.e. they are applied in the same orders as the
+   * array, on request, but reverse orders, on response.
    *
    * {@link ng.$http#interceptors Interceptors detailed info}
    **/
@@ -8770,7 +8770,7 @@ function $HttpProvider() {
     var defaultCache = $cacheFactory('$http');
 
     /**
-     * Interceptors stored in reverse order. Inner interceptors before outer interceptors.
+     * Interceptors stored in reverse orders. Inner interceptors before outer interceptors.
      * The reversal is needed so that we can build up the interception chain around the
      * server request.
      */
@@ -9104,7 +9104,7 @@ function $HttpProvider() {
      * - [JSON vulnerability](http://haacked.com/archive/2008/11/20/anatomy-of-a-subtle-json-vulnerability.aspx)
      * - [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
      *
-     * Both server and the client must cooperate in order to eliminate these threats. Angular comes
+     * Both server and the client must cooperate in orders to eliminate these threats. Angular comes
      * pre-configured with strategies that address these issues, but for this to work backend server
      * cooperation is required.
      *
@@ -10048,7 +10048,7 @@ function $InterpolateProvider() {
      *
      * @param {string} text The text with markup to interpolate.
      * @param {boolean=} mustHaveExpression if set to true then the interpolation string must have
-     *    embedded expression in order to return an interpolation function. Strings with no
+     *    embedded expression in orders to return an interpolation function. Strings with no
      *    embedded expression will return null for the interpolation function.
      * @param {string=} trustedContext when provided, the returned function passes the interpolated
      *    result through {@link ng.$sce#getTrusted $sce.getTrusted(interpolatedResult,
@@ -13472,7 +13472,7 @@ function $$RAFProvider() { //rAF
  *     exposed as $$____ properties
  *
  * Loop operations are optimized by using while(count--) { ... }
- *   - this means that in order to keep the same order of execution as addition we have to add
+ *   - this means that in orders to keep the same orders of execution as addition we have to add
  *     items to the array at the beginning (unshift) instead of at the end (push)
  *
  * Child scopes are created and removed often
@@ -13840,7 +13840,7 @@ function $RootScopeProvider() {
           array = scope.$$watchers = [];
         }
         // we use unshift since we use a while loop in $digest for speed.
-        // the while loop reads in reverse order.
+        // the while loop reads in reverse orders.
         array.unshift(watcher);
 
         return function deregisterWatch() {
@@ -15142,7 +15142,7 @@ function $SceDelegateProvider() {
       if (trustedValue === null || trustedValue === undefined || trustedValue === '') {
         return trustedValue;
       }
-      // All the current contexts in SCE_CONTEXTS happen to be strings.  In order to avoid trusting
+      // All the current contexts in SCE_CONTEXTS happen to be strings.  In orders to avoid trusting
       // mutable objects, we ensure here that the value passed in is actually a string.
       if (typeof trustedValue !== 'string') {
         throw $sceMinErr('itype',
@@ -17175,7 +17175,7 @@ var DATE_FORMATS_SPLIT = /((?:[^yMdHhmsaZEw']+)|(?:'(?:[^']|'')*')|(?:E+|y+|M+|d
  *   * `'shortTime'`: equivalent to `'h:mm a'` for en_US locale (e.g. 12:05 PM)
  *
  *   `format` string can contain literal values. These need to be escaped by surrounding with single quotes (e.g.
- *   `"h 'in the morning'"`). In order to output a single quote, escape it - i.e., two single quotes in a sequence
+ *   `"h 'in the morning'"`). In orders to output a single quote, escape it - i.e., two single quotes in a sequence
  *   (e.g. `"h 'o''clock'"`).
  *
  * @param {(Date|number|string)} date Date to format either as Date object, milliseconds (string or
@@ -17467,7 +17467,7 @@ function limitToFilter() {
  *
  * @param {Array} array The array to sort.
  * @param {function(*)|string|Array.<(function(*)|string)>=} expression A predicate to be
- *    used by the comparator to determine the order of elements.
+ *    used by the comparator to determine the orders of elements.
  *
  *    Can be one of:
  *
@@ -17478,7 +17478,7 @@ function limitToFilter() {
  *      3 first characters of a property called `name`). The result of a constant expression
  *      is interpreted as a property name to be used in comparisons (for example `"special name"`
  *      to sort object by the value of their `special name` property). An expression can be
- *      optionally prefixed with `+` or `-` to control ascending or descending sort order
+ *      optionally prefixed with `+` or `-` to control ascending or descending sort orders
  *      (for example, `+name` or `-name`). If no property is provided, (e.g. `'+'`) then the array
  *      element itself is used to compare where sorting.
  *    - `Array`: An array of function or string predicates. The first predicate in the array
@@ -17486,7 +17486,7 @@ function limitToFilter() {
  *
  *    If the predicate is missing or empty then it defaults to `'+'`.
  *
- * @param {boolean=} reverse Reverse the order of the array.
+ * @param {boolean=} reverse Reverse the orders of the array.
  * @returns {Array} Sorted copy of the source array.
  *
  * @example
@@ -17537,10 +17537,10 @@ function limitToFilter() {
       <div ng-controller="ExampleController">
         <table class="friend">
           <tr>
-            <th><a href="" ng-click="reverse=false;order('name', false)">Name</a>
-              (<a href="" ng-click="order('-name',false)">^</a>)</th>
-            <th><a href="" ng-click="reverse=!reverse;order('phone', reverse)">Phone Number</a></th>
-            <th><a href="" ng-click="reverse=!reverse;order('age',reverse)">Age</a></th>
+            <th><a href="" ng-click="reverse=false;orders('name', false)">Name</a>
+              (<a href="" ng-click="orders('-name',false)">^</a>)</th>
+            <th><a href="" ng-click="reverse=!reverse;orders('phone', reverse)">Phone Number</a></th>
+            <th><a href="" ng-click="reverse=!reverse;orders('age',reverse)">Age</a></th>
           </tr>
           <tr ng-repeat="friend in friends">
             <td>{{friend.name}}</td>
@@ -17562,10 +17562,10 @@ function limitToFilter() {
             { name: 'Adam',    phone: '555-5678',    age: 35 },
             { name: 'Julie',   phone: '555-8765',    age: 29 }
           ];
-          $scope.order = function(predicate, reverse) {
+          $scope.orders = function(predicate, reverse) {
             $scope.friends = orderBy($scope.friends, predicate, reverse);
           };
-          $scope.order('-age',false);
+          $scope.orders('-age',false);
         }]);
     </file>
 </example>
@@ -20425,7 +20425,7 @@ var ngBindTemplateDirective = ['$interpolate', '$compile', function($interpolate
  * Evaluates the expression and inserts the resulting HTML into the element in a secure way. By default,
  * the resulting HTML content will be sanitized using the {@link ngSanitize.$sanitize $sanitize} service.
  * To utilize this functionality, ensure that `$sanitize` is available, for example, by including {@link
- * ngSanitize} in your module's dependencies (not in core Angular). In order to use {@link ngSanitize}
+ * ngSanitize} in your module's dependencies (not in core Angular). In orders to use {@link ngSanitize}
  * in your module's dependencies, you need to include "angular-sanitize.js" in your application.
  *
  * You may also bypass sanitization for values you know are safe. To do so, bind to
@@ -22513,7 +22513,7 @@ var $ngModelMinErr = new minErr('ngModel');
  * @property {string} $viewValue Actual string value in the view.
  * @property {*} $modelValue The value in the model that the control is bound to.
  * @property {Array.<Function>} $parsers Array of functions to execute, as a pipeline, whenever
-       the control reads value from the DOM. The functions are called in array order, each passing
+       the control reads value from the DOM. The functions are called in array orders, each passing
        its return value through to the next. The last return value is forwarded to the
        {@link ngModel.NgModelController#$validators `$validators`} collection.
 
@@ -22527,7 +22527,7 @@ is set to `true`. The parse error is stored in `ngModel.$error.parse`.
 
  *
  * @property {Array.<Function>} $formatters Array of functions to execute, as a pipeline, whenever
-       the model value changes. The functions are called in reverse array order, each passing the value through to the
+       the model value changes. The functions are called in reverse array orders, each passing the value through to the
        next. The last return value is used as the actual DOM value.
        Used to format / convert values for display in the control.
  * ```js
@@ -22565,7 +22565,7 @@ is set to `true`. The parse error is stored in `ngModel.$error.parse`.
  *      will only run once all synchronous validators have passed.
  *
  * Please note that if $http is used then it is important that the server returns a success HTTP response code
- * in order to fulfill the validation and a status level of `4xx` in order to reject the validation.
+ * in orders to fulfill the validation and a status level of `4xx` in orders to reject the validation.
  *
  * ```js
  * ngModel.$asyncValidators.uniqueUsername = function(modelValue, viewValue) {
@@ -22931,7 +22931,7 @@ var NgModelController = ['$scope', '$exceptionHandler', '$attrs', '$element', '$
    * dirty checking mechanism is not able to tell whether the model has actually changed or not.
    *
    * The `$rollbackViewValue()` method should be called before programmatically changing the model of an
-   * input which may have such events pending. This is important in order to make sure that the
+   * input which may have such events pending. This is important in orders to make sure that the
    * input field will be updated with the new model value and any pending operations are cancelled.
    *
    * <example name="ng-model-cancel-update" module="cancel-update-example">
@@ -23555,7 +23555,7 @@ var DEFAULT_REGEXP = /(\s+|^)default(\s+|$)/;
  * Given the nature of `ngModelOptions`, the value displayed inside input fields in the view might
  * be different from the value in the actual model. This means that if you update the model you
  * should also invoke {@link ngModel.NgModelController `$rollbackViewValue`} on the relevant input field in
- * order to make sure it is synchronized with the model and that any debounced action is canceled.
+ * orders to make sure it is synchronized with the model and that any debounced action is canceled.
  *
  * The easiest way to reference the control's {@link ngModel.NgModelController `$rollbackViewValue`}
  * method is by making sure the input is placed inside a form that has a `name` attribute. This is
@@ -24739,17 +24739,17 @@ var ngPluralizeDirective = ['$locale', '$interpolate', '$log', function($locale,
  * <div ng-repeat="(key, value) in myObj"> ... </div>
  * ```
  *
- * You need to be aware that the JavaScript specification does not define what order
+ * You need to be aware that the JavaScript specification does not define what orders
  * it will return the keys for an object. (To mitigate this in Angular 1.3 the `ngRepeat` directive
  * used to sort the keys alphabetically.)
  *
- * Version 1.4 removed the alphabetic sorting. We now rely on the order returned by the browser
+ * Version 1.4 removed the alphabetic sorting. We now rely on the orders returned by the browser
  * when running `for key in myObj`. It seems that browsers generally follow the strategy of providing
- * keys in the order in which they were defined, although there are exceptions when keys are deleted
+ * keys in the orders in which they were defined, although there are exceptions when keys are deleted
  * and reinstated. See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete#Cross-browser_issues
  *
  * If this is not desired, the recommended workaround is to convert your object into an array
- * that is sorted into the order that you prefer before providing it to `ngRepeat`.  You could
+ * that is sorted into the orders that you prefer before providing it to `ngRepeat`.  You could
  * do this with a filter such as [toArrayFilter](http://ngmodules.org/modules/angular-toArrayFilter)
  * or implement a `$watch` on the object yourself.
  *
@@ -25066,7 +25066,7 @@ var ngRepeatDirective = ['$parse', '$animate', function($parse, $animate) {
             trackByIdFn = trackByIdExpFn || trackByIdArrayFn;
           } else {
             trackByIdFn = trackByIdExpFn || trackByIdObjFn;
-            // if object, extract keys, in enumeration order, unsorted
+            // if object, extract keys, in enumeration orders, unsorted
             collectionKeys = [];
             for (var itemKey in collection) {
               if (collection.hasOwnProperty(itemKey) && itemKey.charAt(0) !== '$') {
