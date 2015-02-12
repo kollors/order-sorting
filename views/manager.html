@@ -6,6 +6,12 @@
             </ul>
             <ul data-float="right">
                 <li open-modal="new-order" style="cursor: pointer">Новый заказ</li>
+                <li ng-show="manager.recipe">
+                    <a href="">Рецепты</a>
+                </li>
+                <li ng-show="manager.density">
+                    <a href="#/density">Формулы</a>
+                </li>
                 <li><a href="/#logout">Выход</a></li>
             </ul>
         </nav>

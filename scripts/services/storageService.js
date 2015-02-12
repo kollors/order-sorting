@@ -101,6 +101,14 @@ function $storage(http) {
     };
 
 
+    /*
+    DENSITY
+     */
+    this.getDensity = function (callback) {
+        http.post('_data/manager/density.json').success(callback);
+    };
+
+
 
 
 

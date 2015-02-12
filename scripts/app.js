@@ -19,5 +19,9 @@ function configuration(routeProvider) {
             templateUrl: 'views/assistant.html',
             controller:  'assistantController'
         })
+        .when('/density', {
+            templateUrl: 'views/manager/density.html',
+            controller:  'densityController'
+        })
         .otherwise({templateUrl: 'views/index.html'});
 }

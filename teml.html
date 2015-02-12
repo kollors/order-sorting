@@ -1,1 +1,29 @@
-<input type="checkbox" style="width: 100%; height: 100%; display: block">
+<!--<script src="vendors/angular.js"></script>-->
+
+<canvas>
+</canvas>
+
+<script>
+    var context = document.querySelector('canvas').getContext('2d');
+    context.beginPath();
+    for(var i = 0; i <= 30000; i++) {
+        context.strokeText(i, 20, 20);
+    }
+    context.closePath();
+</script>
+
+<!--
+<script>
+    angular.module('app', []).controller('test1', ['$scope', function (scope) {
+        scope.testG = [];
+        for(var i = 0; i <= 30000; i++) {
+            scope.testG.push(i);
+        }
+    }]);
+</script>
+<div ng-app="app">
+    <input ng-model="tat">
+<div ng-controller="test1">
+    <span ng-repeat="i in testG | filter: tat">{{i}}</span>
+</div>
+</div>-->

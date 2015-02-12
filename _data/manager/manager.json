@@ -1,3 +1,11 @@
 {
-  "name": "Синий Иний Большая Нога"
+  "name": "Синий Иний Большая Нога",
+  "recipe": {
+    "editable": true,
+    "creatable": true
+  },
+  "density": {
+    "editable": true,
+    "creatable": true
+  }
 }
