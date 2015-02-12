@@ -34,24 +34,43 @@ function $storage(http) {
     };
 
     /*
-    COMMON
-     */
-    this.getOrders = function (callback) {
-        http.post('_data/orders.json').success(callback);
-    };
-
-    this.getOrderById = function (orderId, callback) {
-        http.post('_data/orders/' + orderId + '.json').success(callback);
-    };
-
-    /*
     MANAGER
      */
+    this.getOrders = function (callback) {
+        http.post('_data/manager/orders.json').success(callback);
+    };
+
     this.getManagerInfo = function (callback) {
         http.post('_data/manager/manager.json').success(callback);
     };
 
     this.getManagerOrderById = function (orderId, callback) {
         http.post('_data/manager/orders/' + orderId + '.json').success(callback);
+    };
+
+    this.setDifferedItem = function (item, callback) {
+        console.log(item);
+    };
+
+    /*
+    STOREKEEPER
+     */
+    this.getStorekeeperInfo = function (callback) {
+        http.post('_data/storekeeper/storekeeper.json').success(callback);
+    };
+
+    this.getStorekeeperOrders = function (callback) {
+        http.post('_data/storekeeper/orders.json').success(callback);
+    };
+    this.getStorekeeperOrderById = function (orderId, callback) {
+        http.post('_data/storekeeper/orders/' + orderId + '.json').success(callback);
+    };
+
+    this.setItemStatus = function (item) {
+        console.log(item);
+    };
+
+    this.setOrderStatus = function (orderId) {
+        console.log(orderId);
     };
 }

@@ -15,8 +15,11 @@
     <section class="column laptop-4">
         <div class="tab">
             <ul class="control" ng-init="deffered = false">
-                <li nk-tab="tab1" class="active" ng-click="deffered = false">Текущие</li>
-                <li nk-tab="tab2" class="warning" ng-click="deffered = true">Отложенные</li>
+                <li nk-tab="tab1" class="active" ng-click="deffered = false">Текущие
+                </li>
+                <li nk-tab="tab2" class="warning" ng-click="deffered = true">Отложенные
+                    <span ng-if="quantityDefferedOrders > 0" class="round warning">{{quantityDefferedOrders}}</span>
+                </li>
             </ul>
             <section class="content">
                 <section data-tab="tab1" class="active" ng-include="'views/manager/orders.html'"></section>

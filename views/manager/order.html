@@ -4,7 +4,7 @@
         <button ng-if="order.deffered == true" open-modal="backOrder">Вернуть</button>
     </h2>
     <progress value="{{order.status}}" max="100"></progress>
-    <h4>Процент выполнения заказа: {{order.status}}</h4>
+    <h4>Заказ выполнен на {{order.status}}%</h4>
     <span><small>Время создания заказа {{order.time}}</small></span>
 </hgroup>
 

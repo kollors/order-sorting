@@ -52,3 +52,18 @@ nav {
 }
 
 progress { .progress-bar(lightgreen, white) }
+
+
+.round {
+  border-radius: 50%;
+  min-width: 16px;
+  text-align: center;
+  display: inline-block;
+  &.warning {
+    color: #333;
+    background: #FFB74D;
+  }
+  &.danger {
+    background: red;
+  }
+}

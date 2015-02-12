@@ -1,54 +1,56 @@
-{
-  "warehouse": [
-    {
-      "code": "909090",
-      "title": "СЕРЬЕЗНО1",
-      "quantity": "10 щук",
-      "comment": "А я туда ходил и там стена",
-      "ready": false,
-      "deffered": false
-    },
-    {
-      "code": "9090901",
-      "title": "СЕРЬЕЗНО2",
-      "quantity": "100 щук",
-      "comment": "А я туда ходил и там стена",
-      "ready": true,
-      "deffered": false
-    },
-    {
-      "code": "9090902",
-      "title": "СЕРЬЕЗНО133333",
-      "quantity": "10 щук",
-      "comment": "А я туда ходил и там стена",
-      "ready": true,
-      "deffered": false
-    }
-  ],
-  "laboratory": [
-    {
-      "code": "909090",
-      "title": "GOLF",
-      "quantity": "-1 щук",
-      "comment": "А я туда ходил и там стена",
-      "ready": false,
-      "deffered": false
-    },
-    {
-      "code": "9090901",
-      "title": "АЛЬФА КИРПИЧ",
-      "quantity": "10 щук",
-      "comment": "А я туда ходил и там стена",
-      "ready": true,
-      "deffered": false
-    },
-    {
-      "code": "9090902",
-      "title": "КОШКА",
-      "quantity": "10 щук",
-      "comment": "А я туда ходил и там стена",
-      "ready": true,
-      "deffered": false
-    }
-  ]
-}
+[
+  {
+    "code": "909090",
+    "title": "БАШНЯ",
+    "quantity": "10 щук",
+    "category": "warehouse",
+    "comment": "А я туда ходил и там стена",
+    "ready": false,
+    "deffered": false
+  },
+  {
+    "code": "9090901",
+    "title": "СТЕНА",
+    "quantity": "10 щук",
+    "category": "warehouse",
+    "comment": "А я туда ходил и там стена",
+    "ready": false,
+    "deffered": false
+  },
+  {
+    "code": "9090902",
+    "title": "КИРПИЧ",
+    "quantity": "10 щук",
+    "category": "warehouse",
+    "comment": "А я туда ходил и там стена",
+    "ready": true,
+    "deffered": false
+  },
+  {
+    "code": "909090",
+    "title": "СТЕНА БОЛЬШАЯ ВОДА",
+    "quantity": "10 щук",
+    "category": "laboratory",
+    "comment": "А я туда ходил и там стена",
+    "ready": false,
+    "deffered": false
+  },
+  {
+    "code": "9090901",
+    "title": "СМТЕНА МАЛЕНЬКАЯ ВОДА",
+    "quantity": "10 щук",
+    "category": "laboratory",
+    "comment": "А я туда ходил и там стена",
+    "ready": true,
+    "deffered": false
+  },
+  {
+    "code": "9090902",
+    "title": "ГРОМКАЯ КУЧЕРЯВОСТЬ (СИНЯЯ)",
+    "quantity": "10 щук",
+    "category": "laboratory",
+    "comment": "А я туда ходил и там стена",
+    "ready": true,
+    "deffered": false
+  }
+]
