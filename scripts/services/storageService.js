@@ -73,4 +73,54 @@ function $storage(http) {
     this.setOrderStatus = function (orderId) {
         console.log(orderId);
     };
+
+    /*
+     ASSISTANT
+     */
+    this.getAssistantInfo = function (callback) {
+        http.post('_data/assistant/assistant.json').success(callback);
+    };
+
+    this.getAssistantOrders = function (callback) {
+        http.post('_data/assistant/orders.json').success(callback);
+    };
+    this.getAssistantOrderById = function (orderId, callback) {
+        http.post('_data/assistant/orders/' + orderId + '.json').success(callback);
+    };
+
+    this.setItemStatus = function (item) {
+        console.log(item);
+    };
+
+    this.setOrderStatus = function (orderId) {
+        console.log(orderId);
+    };
+
+    this.getOrdersByItem = function (itemId, callback) {
+        http.post('_data/assistant/' + itemId + '.json').success(callback);
+    };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

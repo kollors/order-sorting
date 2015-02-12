@@ -15,5 +15,9 @@ function configuration(routeProvider) {
             templateUrl: 'views/storekeeper.html',
             controller:  'storekeeperController'
         })
+        .when('/assistant', {
+            templateUrl: 'views/assistant.html',
+            controller:  'assistantController'
+        })
         .otherwise({templateUrl: 'views/index.html'});
 }
